@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    background-color: rgb(47, 43, 43);
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    background: black;
+    position: relative;
+    overflow: hidden;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    align-items: center;
+    background-color: rgb(255, 251, 251);
+    position: relative;
+    z-index: 100;
+}
+#nav h3{
+    color: black;
+}
+#nav h2{
+    color: black;
+}
+
+#nav2 {
+    display: flex;
+    gap: 25px;
+}
+
+#nav h3 {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+#hero-text {
+    margin-top: 100px;
+    position: relative;
+    z-index: 10;
+}
+
+#page1 h1 {
+    font-weight: 800;
+    font-size: 8vw;
+    text-transform: uppercase;
+    line-height: 0.9;
+    padding: 0 10%;
+}
+
+#page1 h1:nth-child(2) { text-align: center; }
+#page1 h1:nth-child(3) { text-align: right; }
+
+#page1 img {
+    height: 350px;
+    width: 250px;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 10px;
+}
+
+/* Scattering images */
+#img1 { top: 25%; left: 15%; rotate: -10deg; z-index: 1; }
+#img2 { top: 30%; left: 40%; rotate: 5deg; z-index: 2; }
+#img3 { top: 20%; left: 65%; rotate: 15deg; z-index: 1; }
+
+/* Page 2 */
+#page2 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 86, 86);
+    padding: 5vw 0;
+    overflow: hidden;
+}
+
+#page2 h1 {
+    font-size: 25vw;
+    font-weight: 900;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.projects {
+    width: 90%;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    width: 280px;
+    background: #1e1e1e;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3, .card p { padding: 15px; }
+
+.card:hover {
+    transform: translateY(-15px) rotate(2deg);
+}
+
+/* Page 3 */
+#page3 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #a5b4a8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5vw;
+}
+
+#page3 h1 {
+    color: #c4d6c8;
+    text-align: center;
+    font-size: 5vw;
+    line-height: 1.2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* This is crucial for the split text animation */
+#page3 h1 span {
+    display: inline-block;
+}
+#page4{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #2c988b;
+justify-content: center;
+}
+#page4 h1{
+    display: flex;          
+    justify-content: center; 
+    align-items: center;
+}
+#page4 h2{
+    display: flex;         
+    justify-content: center;
+    align-items: center;
+}
