@@ -11,19 +11,13 @@ tl.from("#nav h3",{
     stagger:0.2 
 })
 
-tl.from("#main h1",{
+tl.from("#hero-text h1",{
     x:-500,
     duration:0.8,
     opacity:0,
     stagger:0
 })
-// tl.from("#main h2",{
-//     x:-500,
-//     duration:0.8,
-//     opacity:0,
-//     stagger:0
-// })
-tl.from("img",{
+tl.from("#page1 img",{
     x:50,
     rotate:45,
     duration:0.6,
@@ -40,7 +34,20 @@ gsap.to("#page2 h1",{
         start:"top 0",
         end:"top -100%",
         scrub:2,
-        pin:true
+        pin:true,
+        stagger:0.2
+    }
+})
+gsap.from(".projects img",{
+    x:50,
+    rotate:50,
+    duration:0.6,
+        opacity:0,
+    scrollTrigger:{
+        trigger:".projects",
+        scroller:"body",
+        start:"top -140",
+        scrub:1,
     }
 })
 
@@ -79,4 +86,17 @@ gsap.to("#page3 h1 span", {
         end: "top 0%",
         scrub: 2
     }
+});
+//Contact-info
+gsap.from("#page4 .contact-container",{
+    x:10,
+    duration:0.8,
+    opacity:0,
+    scrollTrigger:{
+      trigger:".contact-container",
+         scroller:"body",
+        start:"top 400",
+        end:"top 500",
+        scrub:1,
+            }
 });
